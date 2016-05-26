@@ -1,1 +1,1 @@
-# pygame
+# Gra logiczna w pygame
