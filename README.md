@@ -1,4 +1,4 @@
-# Cannibara
+# Cannibara - kapibara spotyka agar.io
 #
 # Stań się ultra kanibalem kapibarą
 #
