@@ -263,6 +263,8 @@ class Game:
 
                         elif not invulnerableMode:
                             # gracz jt mniejszy i traci zdrowie
+                            injured = pygame.mixer.Sound('sounds/capybara_barks_mono.wav')
+                            injured.play()
                             invulnerableMode = True
                             invulnerableStartTime = time.time()
                             playerObj['health'] -= 1
@@ -272,7 +274,7 @@ class Game:
             else:
                 # koniec gry
                 DISPLAYSURF.blit(gameOverSurf, gameOverRect)
-                pygame.mixer.music.stop()
+                pygame.mixer.music.fadeout(1000)
                 if time.time() - gameOverStartTime > GAMEOVERTIME:
                     return
 
