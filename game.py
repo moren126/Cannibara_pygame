@@ -44,8 +44,6 @@ class Game:
     def runGame(WINWIDTH,WINHEIGHT,DISPLAYSURF):
 
         FPSCLOCK = pygame.time.Clock()
-        BASICFONT = pygame.font.Font('fonts/Kenzo.otf', 48) 
-        BASICFONT2 = pygame.font.Font('fonts/Kenzo Regular Italic.otf', 48)  
         L_CAP_IMG = pygame.image.load('graphics/capybara.png')
         R_CAP_IMG = pygame.transform.flip(L_CAP_IMG, True, False)    
 
@@ -61,15 +59,18 @@ class Game:
         winMode = False
 
         # powierzchnie na teksty gry
-        gameOverSurf = BASICFONT.render('Game Over', True, PURPLE)
+        BASICFONTG = pygame.font.Font('fonts/Kenzo.otf', 70) 
+        gameOverSurf = BASICFONTG.render('Game Over', True, PURPLE)
         gameOverRect = gameOverSurf.get_rect()
         gameOverRect.center = (HALF_WINWIDTH, HALF_WINHEIGHT)
 
-        winSurf = BASICFONT.render('You have become ultra CANNIBAL CAPYBARA!', True, WHITE)
+        BASICFONTW = pygame.font.Font('fonts/Kenzo.otf', 48) 
+        winSurf = BASICFONTW.render('You have become ultra CANNIBAL CAPYBARA!', True, WHITE)
         winRect = winSurf.get_rect()
         winRect.center = (HALF_WINWIDTH, HALF_WINHEIGHT)
 
-        winSurf2 = BASICFONT2.render('(Press "r" to restart)', True, WHITE)
+        BASICFONTI = pygame.font.Font('fonts/Kenzo Regular Italic.otf', 48)  
+        winSurf2 = BASICFONTI.render('(Press "m" to go to menu)', True, WHITE)
         winRect2 = winSurf2.get_rect()
         winRect2.center = (HALF_WINWIDTH, HALF_WINHEIGHT + 40)
 
@@ -208,7 +209,7 @@ class Game:
                         if playerObj['facing'] != RIGHT:
                             playerObj['surface'] = pygame.transform.scale(R_CAP_IMG, (playerObj['size'], playerObj['size']))
                         playerObj['facing'] = RIGHT
-                    elif winMode and event.key == K_r:
+                    elif winMode and event.key == K_m:
                         return
 
                 elif event.type == KEYUP:
@@ -282,7 +283,8 @@ class Game:
             if winMode:
                 DISPLAYSURF.blit(winSurf, winRect)
                 DISPLAYSURF.blit(winSurf2, winRect2)
-                pygame.mixer.music.stop()
+                pygame.mixer.music.fadeout(1000)
+                #pygame.mixer.music.stop()
 
             pygame.display.update()
             FPSCLOCK.tick(FPS)
