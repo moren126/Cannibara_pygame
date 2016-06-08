@@ -181,7 +181,7 @@ class Game:
 
 
             # rysowanie wskaźnika poziomu zdrowia
-            HealthMeter.drawHealthMeter(playerObj['health'], DISPLAYSURF, MAXHEALTH)
+            HealthMeter.drawHealthMeter(playerObj['health'], DISPLAYSURF, MAXHEALTH, WINHEIGHT)
 
             # obsługa zdarzeń
             for event in pygame.event.get():
