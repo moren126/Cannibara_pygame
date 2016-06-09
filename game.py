@@ -9,6 +9,7 @@ from ground import*
 from enemy import*
 from bouncing import*
 from healthMeter import *
+from eaten import *
 
 FPS = 30
 WINWIDTH = 800 # szerokosc okna
@@ -74,7 +75,9 @@ class Game:
         winRect2 = winSurf2.get_rect()
         winRect2.center = (HALF_WINWIDTH, HALF_WINHEIGHT + 40)
 
-        
+        # licznik zjedzonych kapibar
+        eatens = 0
+             
         camerax = 0
         cameray = 0
 
@@ -184,6 +187,9 @@ class Game:
             # rysowanie wskaźnika poziomu zdrowia
             HealthMeter.drawHealthMeter(playerObj['health'], DISPLAYSURF, MAXHEALTH, WINHEIGHT)
 
+            # rysowanie licznika zjedzonych kapibar
+            Eaten.drawEatenCounter(eatens, DISPLAYSURF, WINWIDTH)
+            
             # obsługa zdarzeń
             for event in pygame.event.get():
                 if event.type == QUIT:
@@ -251,6 +257,7 @@ class Game:
                         # doszło do kolizji
                         if enObj['width'] * enObj['height'] <= playerObj['size']**2:
                             # gracz jt większy i zjada kapibarę
+                            eatens += 1
                             playerObj['size'] += int( (enObj['width'] * enObj['height'])**0.2 ) + 1
                             del enemyObjs[i]
 
