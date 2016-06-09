@@ -81,7 +81,6 @@ def playButton(msg,x,y,w,h,ic,ac):
 def quitButton(msg,x,y,w,h,ic,ac):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
-    print(mouse)
 
     if x+w > mouse[0] > x and y+h > mouse[1] > y:
         pygame.draw.rect(DISPLAYSURF, ac,(x,y,w,h))
