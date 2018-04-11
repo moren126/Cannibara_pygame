@@ -12,7 +12,7 @@ Sterowanie klawiszami:
 WSAD/strzałki - ruch
 'p' - pauza
 'esc' - natychmiasowe zamknięcie aplikacji
-             
+    
 Projekt wykonany z wykorzystaniem Pythona 3.4 oraz PyGame 1.9.2a0 dla Pythona 3.4 w celu nauki tych technologii.
 
 ![alt text](screenshots/c_02.png "Some play")
@@ -29,8 +29,8 @@ Instrukcja: wypakuj plik zip i uruchom main.exe
 Become an ultra cannibal capybara
 
  - eat smaller capybaras
- - run away from the bigger ones
- 
+ - run away from the bigger ones
+
 Key controls:
 
 WSAD / arrows - movement
