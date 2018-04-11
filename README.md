@@ -9,9 +9,7 @@ Stań się ultra kanibalem kapibarą
  
 Sterowanie klawiszami:
 
-WSAD/strzałki - ruch
-'p' - pauza
-'esc' - natychmiasowe zamknięcie aplikacji
+WSAD/strzałki - ruch, 'p' - pauza, 'esc' - natychmiasowe zamknięcie aplikacji
     
 Projekt wykonany z wykorzystaniem Pythona 3.4 oraz PyGame 1.9.2a0 dla Pythona 3.4 w celu nauki tych technologii.
 
@@ -33,9 +31,7 @@ Become an ultra cannibal capybara
 
 Key controls:
 
-WSAD / arrows - movement
-'p' - pause
-'esc' - immediate closure of the application
+WSAD / arrows - movement, 'p' - pause, 'esc' - immediate closure of the application
 
 Project made using Python 3.4 and PyGame 1.9.2a0 for Python 3.4  in order to learn about these technologies.
 
