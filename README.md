@@ -13,12 +13,12 @@ WSAD/strzałki - ruch, 'p' - pauza, 'esc' - natychmiasowe zamknięcie aplikacji
     
 Projekt wykonany z wykorzystaniem Pythona 3.4 oraz PyGame 1.9.2a0 dla Pythona 3.4 w celu nauki tych technologii.
 
-![alt text](screenshots/c_02.png "Some play")
+![alt text](screenshots/c_02.png "During play")
 
 #
 Katalog z plikami wykonywalnymi dostępny tutaj: 
 
-https://my.pcloud.com/publink/show?code=XZQpDQ7ZPxT1QhWrsWhtw05lQoiukL3nJuay
+https://my.pcloud.com/publink/show?code=XZRaOQ7Zc5kq2sHfafbB6uJ5GK1vqu2vtsL7
 
 Instrukcja: wypakuj plik zip i uruchom main.exe 
 
@@ -38,6 +38,6 @@ Project made using Python 3.4 and PyGame 1.9.2a0 for Python 3.4  in order to lea
 
 Catalog with executable files available here:
 
-https://my.pcloud.com/publink/show?code=XZQpDQ7ZPxT1QhWrsWhtw05lQoiukL3nJuay
+https://my.pcloud.com/publink/show?code=XZRaOQ7Zc5kq2sHfafbB6uJ5GK1vqu2vtsL7
 
 Instructions: extract the zip file and run main.exe
